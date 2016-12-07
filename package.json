@@ -1,0 +1,41 @@
+{
+  "name": "stockdb",
+  "version": "0.0.5",
+  "description": "JavaScript client library for StockDB",
+  "main": "dist/stockdb.common.js",
+  "files": [
+    "dist/stockdb.common.js",
+    "dist/stockdb.js",
+    "src"
+  ],
+  "scripts": {
+    "start": "webpack --config webpack.common.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stockdb/stockdb-js.git"
+  },
+  "keywords": [
+    "stockdb"
+  ],
+  "author": "https://github.com/miaolz123",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stockdb/stockdb-js/issues"
+  },
+  "homepage": "https://github.com/stockdb/stockdb-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-es2015-parameters": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-runtime": "^6.6.1",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "hprose-html5": "^2.0.31"
+  }
+}

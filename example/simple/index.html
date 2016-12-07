@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>StockDB</title>
+  </head>
+  <body>
+    <p>Some things happen at the console!</p>
+    <script src="../../dist/hprose-html5.js"></script>
+    <script src="../../dist/stockdb.js"></script>
+    <script>
+      console.log(StockDB.New("http://localhost:8765", "username:password"));
+    </script>
+  </body>
+</html>
