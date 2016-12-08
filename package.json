@@ -1,6 +1,6 @@
 {
   "name": "stockdb",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "JavaScript client library for StockDB",
   "main": "dist/stockdb.common.js",
   "files": [

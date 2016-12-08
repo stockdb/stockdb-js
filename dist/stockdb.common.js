@@ -1,5 +1,5 @@
 /**
- * StockDB v0.0.5
+ * StockDB v0.1.0
  * https://github.com/stockdb/stockdb-js
  * MIT License
  */
@@ -65,27 +65,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.Year = exports.Quarter = exports.Month = exports.Week = exports.Day = exports.Hour = exports.Minute = exports.Second = exports.New = undefined;
 
 	var _hproseHtml = __webpack_require__(1);
 
-	var New = exports.New = function New(uri, auth) {
-	    var token = window.btoa(auth);
-	    var stockdb = _hproseHtml.Client.create(uri, ['PutOHLC', 'PutOHLCs', 'GetTimeRange', 'GetOHLCs', 'GetDepth']);
-
-	    stockdb.setHeader('Authorization', 'Basic ' + token);
-
-	    return stockdb;
+	exports.default = {
+	    New: function New(uri, auth) {
+	        var token = window.btoa(auth);
+	        var stockdb = _hproseHtml.Client.create(uri, ['PutOHLC', 'PutOHLCs', 'GetMarkets', 'GetSymbols', 'GetTimeRange', 'GetOHLCs', 'GetDepth']);
+	        stockdb.setHeader('Authorization', 'Basic ' + token);
+	        return stockdb;
+	    },
+	    Second: 1,
+	    Minute: 60,
+	    Hour: 3600,
+	    Day: 86400,
+	    Week: 604800,
+	    Month: 2592000,
+	    Quarter: 7776000,
+	    Year: 31536000
 	};
-
-	var Second = exports.Second = 1;
-	var Minute = exports.Minute = 60;
-	var Hour = exports.Hour = 3600;
-	var Day = exports.Day = 86400;
-	var Week = exports.Week = 604800;
-	var Month = exports.Month = 2592000;
-	var Quarter = exports.Quarter = 7776000;
-	var Year = exports.Year = 31536000;
 
 /***/ },
 /* 1 */

@@ -3,16 +3,15 @@ export const New = (uri, auth) => {
     const stockdb = hprose.HttpClient(uri, [
         'PutOHLC',
         'PutOHLCs',
+        'GetMarkets',
+        'GetSymbols',
         'GetTimeRange',
         'GetOHLCs',
         'GetDepth',
     ]);
-
     stockdb.setHeader('Authorization', `Basic ${token}`);
-
     return stockdb;
 };
-
 export const Second = 1;
 export const Minute = 60;
 export const Hour = 3600;
