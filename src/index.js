@@ -3,6 +3,7 @@ export const New = (uri, auth) => {
     const stockdb = hprose.HttpClient(uri, [
         'PutOHLC',
         'PutOHLCs',
+        'GetStats',
         'GetMarkets',
         'GetSymbols',
         'GetTimeRange',

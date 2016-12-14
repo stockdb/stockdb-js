@@ -1,5 +1,5 @@
 /**
- * StockDB v0.1.0
+ * StockDB v0.1.3
  * https://github.com/stockdb/stockdb-js
  * MIT License
  */
@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	var New = exports.New = function New(uri, auth) {
 	    var token = window.btoa(auth);
-	    var stockdb = hprose.HttpClient(uri, ['PutOHLC', 'PutOHLCs', 'GetMarkets', 'GetSymbols', 'GetTimeRange', 'GetOHLCs', 'GetDepth']);
+	    var stockdb = hprose.HttpClient(uri, ['PutOHLC', 'PutOHLCs', 'GetStats', 'GetMarkets', 'GetSymbols', 'GetTimeRange', 'GetOHLCs', 'GetDepth']);
 	    stockdb.setHeader('Authorization', 'Basic ' + token);
 	    return stockdb;
 	};
