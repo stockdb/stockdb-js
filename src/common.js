@@ -6,6 +6,8 @@ export default {
         const stockdb = Client.create(uri, [
             'PutOHLC',
             'PutOHLCs',
+            'PutOrder',
+            'PutOrders',
             'GetStats',
             'GetMarkets',
             'GetSymbols',
