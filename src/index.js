@@ -9,6 +9,7 @@ export const New = (uri, auth) => {
         'GetMarkets',
         'GetSymbols',
         'GetTimeRange',
+        'GetPeriodRange',
         'GetOHLCs',
         'GetDepth',
     ]);

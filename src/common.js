@@ -12,6 +12,7 @@ export default {
             'GetMarkets',
             'GetSymbols',
             'GetTimeRange',
+            'GetPeriodRange',
             'GetOHLCs',
             'GetDepth',
         ]);
